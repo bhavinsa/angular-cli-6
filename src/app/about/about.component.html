@@ -1,0 +1,17 @@
+<app-header></app-header>
+<div class="jumbotron">
+  <h1>About Page!</h1>
+
+  <form #userlogin="ngForm" (ngSubmit)="onClickSubmit(userlogin.value)">
+    <input #emaili type="text" name="emailid" placeholder="enter your email address" ngModel>
+    <br/>
+    <br/>
+    <input type="password" name="passwd" placeholder="enter your password" ngModel>
+    <br/>
+    <br/>
+    <input type="submit" value="submit">
+    <br/><br/>
+    <input type="text" value="jigs" #myinput>
+  </form>
+
+</div>
